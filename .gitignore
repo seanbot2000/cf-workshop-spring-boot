@@ -7,3 +7,5 @@
 .idea
 target/
 .metadata
+.sts4-cache
+bin
