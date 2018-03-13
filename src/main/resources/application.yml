@@ -1,7 +1,7 @@
 ---
 spring:
     application:
-        name: CF-WORKSHOP-DEMO
+        name: CF-WORKSHOP-SPRING-BOOT
     jpa:
         hibernate:
             ddl-auto: create

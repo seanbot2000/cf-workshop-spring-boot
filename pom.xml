@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.pivotal.workshop</groupId>
-    <artifactId>cf-workshop-demo</artifactId>
-    <version>1.0.1.RELEASE</version>
+    <artifactId>cf-workshop-spring-boot</artifactId>
+    <version>1.0.2.RELEASE</version>
     <packaging>jar</packaging>
 
-    <name>cf-workshop-demo</name>
+    <name>cf-workshop-spring-boot</name>
     <description>Demo Spring Boot Project for CF Workshops</description>
 
     <parent>
