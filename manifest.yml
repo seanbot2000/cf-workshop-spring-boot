@@ -1,7 +1,10 @@
 applications:
 - name: cf-workshop-spring-boot
-  host: cfworkshop-${random-word}
+  host: cf-workshop-spring-boot
   instances: 1
   memory: 1024M
   stack: cflinuxfs2
   path: target/cf-workshop-spring-boot-1.0.2.RELEASE.jar
+  services:
+  - cf-workshop-db
+  - service-registry

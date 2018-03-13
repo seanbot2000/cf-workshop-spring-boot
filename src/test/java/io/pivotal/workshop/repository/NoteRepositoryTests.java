@@ -1,6 +1,7 @@
 package io.pivotal.workshop.repository;
 
 import io.pivotal.workshop.repository.NoteRepository;
+import java.util.Optional;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -59,7 +60,7 @@ public class NoteRepositoryTests {
 	 */
 	@Test
 	public void testFindOne() {
-		Note note = noteRepository.findOne(5001L);
+		Note note = noteRepository.findById(5001L).get();
 		TestCase.assertNotNull("ID 5001 should return a Note.", note);
 	}
 
@@ -78,7 +79,7 @@ public class NoteRepositoryTests {
 	 */
 	@Test
 	public void testUpdate() {
-		Note note = noteRepository.findOne(5001L);
+		Note note = noteRepository.findById(5001L).get();
 		note.setText("Changed note text.");
 		note = noteRepository.save(note);
 		TestCase.assertEquals("Note text should be updated.", "Changed note text.", note.getText());
@@ -90,9 +91,9 @@ public class NoteRepositoryTests {
 	 */
 	@Test
 	public void testDelete() {
-		noteRepository.delete(5001L);
-		Note note = noteRepository.findOne(5001L);
-		TestCase.assertNull("Note with ID 5001 shouldn't exist after delete.", note);
+		noteRepository.deleteById(5001L);
+		Optional<Note> note = noteRepository.findById(5001L);
+		TestCase.assertFalse("Note with ID 5001 shouldn't exist after delete.", note.isPresent());
 	}
 
 	/**

@@ -55,7 +55,7 @@ public class NoteController {
 	@RequestMapping(value = "/{noteId}", method = RequestMethod.GET)
 	public @ResponseBody Note getNote(@PathVariable Long noteId) {
 		
-		Note note = noteRepository.findOne(noteId);
+		Note note = noteRepository.findById(noteId).get();
 		log.debug(String.format("Note with ID %d = [%s].", noteId, note));
 		return note;
 		
@@ -82,7 +82,7 @@ public class NoteController {
 	@RequestMapping(value = "/{noteId}", method = RequestMethod.DELETE)
 	public void deleteNote(@PathVariable Long noteId) {
 		
-		noteRepository.delete(noteId);
+		noteRepository.deleteById(noteId);
 		log.debug(String.format("Deleted note with id %d", noteId));
 		
 	}
