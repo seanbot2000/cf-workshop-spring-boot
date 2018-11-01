@@ -1,6 +1,5 @@
 applications:
 - name: cf-workshop-spring-boot
-  host: cf-workshop-spring-boot
   instances: 1
   memory: 1024M
   stack: cflinuxfs2
