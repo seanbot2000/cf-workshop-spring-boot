@@ -17,7 +17,7 @@ It is intended to demonstrate some of the basic day-in-the-life features for dev
 #### To get the source code and build the JAR file
 
 
-    git clone https://github.com/pivotal-cf-workshop/cf-workshop-demo
+    git clone https://github.com/bjimerson-pivotal/cf-workshop-demo
 
     mvn clean package
 
