@@ -78,12 +78,12 @@
         <repository>
             <id>artifactory</id>
             <name>CF Workshop Milestone Repository</name>
-            <url>http://artifactory.snbv2.com:8081/artifactory/libs-release</url>
+            <url>http://artifactory.snbv2.com/artifactory/libs-release</url>
         </repository>
         <snapshotRepository>
             <id>artifactory</id>
             <name>CF Workshop Snapshot Repository</name>
-            <url>http://artifactory.snbv2.com:8081/artifactory/libs-snapshot</url>
+            <url>http://artifactory.snbv2.com/artifactory/libs-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 
