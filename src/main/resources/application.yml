@@ -5,9 +5,6 @@ spring:
     jpa:
         hibernate:
             ddl-auto: create
-    cloud:
-        services:
-            registrationMethod: route
 security:
     basic:
         enabled: false
