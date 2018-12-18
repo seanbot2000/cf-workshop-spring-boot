@@ -45,3 +45,4 @@ Running in CF is as usual too:
  * Go to the Environment page, and show the bound service.
  * Click the 'Kill' button, refresh the page, and show the app missing.  Wait ~10 seconds, refresh the page, and show that the app is back.  Discuss health monitoring and management.  Try doing this while tailing logs to show log streaming too.
  * Scale the application to 3 instances.  Refresh the home page a few times and show the instance variables change due to automatic load balancing in the router.
+ 
