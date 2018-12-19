@@ -18,3 +18,9 @@ logging:
         com:
             netflix:
                 discovery: DEBUG
+management:
+    endpoints:
+        enabled-by-default: true
+    info:
+        git:
+            mode: full
