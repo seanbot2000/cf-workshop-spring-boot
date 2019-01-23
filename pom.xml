@@ -5,7 +5,7 @@
 
     <groupId>io.pivotal.workshop</groupId>
     <artifactId>cf-workshop-spring-boot</artifactId>
-    <version>1.0.3.RELEASE</version>
+    <version>1.0.4.RELEASE</version>
     <packaging>jar</packaging>
 
     <name>cf-workshop-spring-boot</name>
@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.1.RELEASE</version>
+        <version>2.1.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -59,32 +59,7 @@
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.4.2.RELEASE</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>build-info</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
-        
-    <distributionManagement>
-        <repository>
-            <id>artifactory</id>
-            <name>CF Workshop Milestone Repository</name>
-            <url>http://artifactory.snbv2.com/artifactory/libs-release</url>
-        </repository>
-        <snapshotRepository>
-            <id>artifactory</id>
-            <name>CF Workshop Snapshot Repository</name>
-            <url>http://artifactory.snbv2.com/artifactory/libs-snapshot</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 </project>
